@@ -1,6 +1,47 @@
-import React, { Component } from "react";
+//import React, { Component } from "react";
+import React, { useState } from "react";
 
-class SearchBar extends Component {
+function SearchBar() {
+  const [name, setName] = useState("");
+
+  const searchMovies = async () => {
+    alert("hello " + name);
+    console.log('name' + name);
+    const data = await fetch(
+      `https://api.tvmaze.com/search/shows?q=${name}`
+  );
+  const dataJson = await data.json();
+  //const result = dataJson.results;
+  console.log(JSON.stringify(dataJson));
+  //setPics(result);
+    //const apiUrl = `https://api.tvmaze.com/search/shows?q=${name}`;
+ //   fetch(apiUrl)
+ //         .then((response) => response.json())
+ //         .then((data) => {
+ //           const results = data.map((element) => element.show);
+            //renderResults(results);
+ //           alert("2");
+ //         });
+    };
+  
+
+
+  return(
+  <div>
+  <input
+  type="text"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  />
+  <button onClick={() => searchMovies()}>Enter</button>
+  </div> 
+  )
+}
+
+export default SearchBar
+
+
+/* class SearchBar extends Component {
       render() {
             return (
             <form>
@@ -10,7 +51,7 @@ class SearchBar extends Component {
         )
       }
     }
-    export default SearchBar
+    export default SearchBar */
 
 /* 
 const prepareSearchQuery = (query) => {
