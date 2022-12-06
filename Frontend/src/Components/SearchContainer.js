@@ -1,5 +1,6 @@
 import React from "react"
 import SearchResultsList from "./SearchResultsList";
+import SearchBar from "./SearchBar"
 
 class SearchContainer extends React.Component {
     state = {
@@ -22,8 +23,9 @@ class SearchContainer extends React.Component {
   render() {
     return (
     <div>
+        <SearchBar />
         <SearchResultsList SearchResults={this.state.SearchResults} />
-        </div>
+    </div>
         );
     }
 }

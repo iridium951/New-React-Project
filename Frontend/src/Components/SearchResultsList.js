@@ -1,16 +1,17 @@
 import React from "react"
+import SearchItem from "./SearchItem";
 
 class SearchResultsList extends React.Component {
   render() {
     return (
       <ul>
         {this.props.SearchResults.map(SearchResult => (
-          <li key={SearchResult.id}>{SearchResult.MovieTitle}</li>
+          <SearchItem key={SearchResult.id} SearchResult={SearchResult} />
         ))}
-
       </ul>
     )
   }
 }
+
 export default SearchResultsList
 
