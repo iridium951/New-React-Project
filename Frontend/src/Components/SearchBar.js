@@ -11,9 +11,7 @@ function SearchBar() {
       `https://api.tvmaze.com/search/shows?q=${name}`
   );
   const dataJson = await data.json();
-  //const result = dataJson.results;
   console.log(JSON.stringify(dataJson));
-  //setPics(result);
     //const apiUrl = `https://api.tvmaze.com/search/shows?q=${name}`;
  //   fetch(apiUrl)
  //         .then((response) => response.json())
@@ -40,24 +38,7 @@ function SearchBar() {
 
 export default SearchBar
 
-
-/* class SearchBar extends Component {
-      render() {
-            return (
-            <form>
-                  <input type="text" placeholder="Search Movies..." />
-                  <button>Enter</button>
-                  </form>
-        )
-      }
-    }
-    export default SearchBar */
-
 /* 
-const prepareSearchQuery = (query) => {
-      const apiUrl = `http://api.tvmaze.com/search/shows?q=${query}`;
-
-
 searchShow = function(query) {
       const apiUrl = `https://api.tvmaze.com/search/shows?q=${query}`;
       fetch(apiUrl)
