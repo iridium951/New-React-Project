@@ -5,25 +5,22 @@ import SearchBar from "./SearchBar"
 class SearchContainer extends React.Component {
     state = {
         SearchResults: [
-          {
-            id: 1,
-            MovieTitle: "The Office",
-          },
-          {
-            id: 2,
-            MovieTitle: "Avatar",
-          },
-          {
-            id: 3,
-            MovieTitle: "Die Hard",
-          }
+
         ]
        };
+
+
+       setSearchResults = results => {
+        console.log(JSON.stringify(results));
+        this.setState({    
+          SearchResults: results
+        });
+      };       
 
   render() {
     return (
     <div>
-        <SearchBar />
+        <SearchBar setSearchResultsProps={this.setSearchResults} />
         <SearchResultsList SearchResults={this.state.SearchResults} />
     </div>
         );
