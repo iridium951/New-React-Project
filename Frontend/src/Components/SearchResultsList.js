@@ -6,7 +6,7 @@ class SearchResultsList extends React.Component {
     return (
       <ul>
         {this.props.SearchResults.map(SearchResult => (
-          <SearchItem key={SearchResult.show.id} SearchResult={SearchResult} />
+          <SearchItem key={SearchResult.show.id} SearchResult={SearchResult} setMovieDetailsProps={this.props.setMovieDetailsProps} />
         ))}
       </ul>
     )
