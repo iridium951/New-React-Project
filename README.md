@@ -1,8 +1,8 @@
+![Logo](https://github.com/iridium951/New-React-Project/blob/laptop/Frontend/src/assets/logo.png)
+
 ## Deployment
 
 The deployment link will appear here once available
-
-![Logo](../Frontend/src/assets/logo.png](https://github.com/iridium951/New-React-Project/blob/laptop/Frontend/src/assets/logo.png)
 
 ## App description
 
