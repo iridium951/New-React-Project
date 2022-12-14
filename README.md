@@ -2,10 +2,19 @@
 
 The deployment link will appear here once available
 
+![Logo](../Frontend/src/assets/logo.png)
+
+## App description
+
+MovLook is a movie lookup website/ catalogue. It's functionality is simple - users can search for movies, tv-shows or animations and then view their details (such as release date, actors, genre, rating, etc). 
+
+You can type in a name of a movie (or a part of the name) into the search bar and press "enter" to search. After getting a list of results containing movie name and image, you can click "show details" to view more details about the chosen movie.
+
+Additionally, a privacy policy and impressum can be found in the footer of the website. 
+
 ## Credits
 
-This project uses two APIs: [TVmaze](https://www.tvmaze.com/api) and [Movie Quote API -- curently not functioning](https://movie-quote-api.herokuapp.com/).
-
+This project uses the API [TVmaze](https://www.tvmaze.com/api).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
