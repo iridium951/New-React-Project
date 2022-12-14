@@ -9,10 +9,11 @@ import WhatsappLogo from './socials/whatsapp.svg';
 export default function Footer() {
   return (
     <footer>
-<div class="row primary">
+
+<div class="row main">
   <div class="column about">
 
-  <h3>MovLook</h3>
+  <h1>MovLook</h1>
 
    <p>
    Modularbeit Frontend im Kurs Webtechnologien
@@ -33,7 +34,7 @@ export default function Footer() {
 </div>
 
 
-<div class="column links">
+<div class="column legal">
 <h3>Legal</h3>
 
  <ul>
@@ -52,9 +53,9 @@ export default function Footer() {
 </div>
 
 
-<div class="column subscribe">
+<div class="column newsletter">
  <h3>Newsletter</h3>
-  <div>
+  <div class="footer-newsletter">
    <input type="email" placeholder="Your email id here" />
    <button>Subscribe</button>
   </div>
@@ -75,6 +76,7 @@ export default function Footer() {
   </div>
    <p>Copyright &copy; 2022 Anastasia Shulman</p>
 </div>
+
 </footer>
   )
 }

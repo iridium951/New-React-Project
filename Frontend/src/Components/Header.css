@@ -39,15 +39,14 @@
     transform: scale(1.1);
   }
   .Nav button {
-    /* margin-right: -30px; */
     padding: 11px;
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: 1em;
     color: rgb(0, 0, 0);
-    font-weight: 600;
+    font-weight: 400;
     background-color: rgb(255, 202, 60);
-    border-radius: 7px;
+    border-radius: 5px;
     cursor: pointer;
     transition: 70ms;
   }
