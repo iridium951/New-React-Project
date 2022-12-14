@@ -1,39 +1,24 @@
-/* .Burger{
-    display: none;
-}
-
-@media (max-width: 700px) {
-    .Header {
-        grid-template-areas: "logo burger" "nav nav";
-    }
-    .Nav {
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: none;
-        grid-row-gap: 20px;
-    }
-    .Burger{
-        display: block;
-    }
-} */
-
 .Header {
     position: fixed;
     top: 0px; 
     left: 0px;
-    max-height: 70px;
+    height: 60px;
     width: 100vw;
+    
+    font-family: 'Poppins', sans-serif !important;
   
     display: grid;
     grid-template-areas: "logo nav";
   
-    /* Cosmetics */
-    background-color: #282c34;
+    background-color: #202036;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
   .Logo {
     grid-area: logo;
-    height: 70px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
   
   .Nav {
@@ -45,7 +30,7 @@
   }
   .Nav a {
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
     transition: 0.5s;
     text-decoration: none;
@@ -54,15 +39,15 @@
     transform: scale(1.1);
   }
   .Nav button {
-    padding: 10px;
+    /* margin-right: -30px; */
+    padding: 11px;
     outline: none;
     border: none;
-    font-size: 20px;
-    color: #fff;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
     font-weight: 600;
     background-color: rgb(255, 202, 60);
-    box-shadow: 0px 5px 0px 0px rgba(255, 202, 60, 0.5);
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
     transition: 70ms;
   }

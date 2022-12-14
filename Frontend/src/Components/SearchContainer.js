@@ -2,6 +2,7 @@ import React from "react"
 import SearchResultsList from "./SearchResultsList";
 import SearchBar from "./SearchBar"
 import SearchItemDetails from "./SearchItemDetails";
+import "./SearchContainer.css";
 
 class SearchContainer extends React.Component {
     state = {
