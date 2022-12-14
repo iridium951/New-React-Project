@@ -11,5 +11,5 @@ root.render(
     <Header />
     <SearchContainer />
     <Footer />
-  </React.StrictMode> 
+  </React.StrictMode>
 );

@@ -5,26 +5,26 @@ import SearchItemDetails from "./SearchItemDetails";
 import "./SearchContainer.css";
 
 class SearchContainer extends React.Component {
-    state = {
-        SearchResults: [],
-        MovieDetails: {}
-       };
+  state = {
+    SearchResults: [],
+    MovieDetails: {}
+  };
 
-       setSearchResults = results => {
-        console.log(JSON.stringify(results));
-        this.setState({    
-          SearchResults: results,
-          MovieDetails: {}
-        });
-      };       
+  setSearchResults = results => {
+    console.log(JSON.stringify(results));
+    this.setState({
+      SearchResults: results,
+      MovieDetails: {}
+    });
+  };
 
-      setMovieDetails = details => {
-        console.log(JSON.stringify(details));
-        this.setState({    
-          SearchResults: this.state.SearchResults,
-          MovieDetails: details
-        });
-      };       
+  setMovieDetails = details => {
+    console.log(JSON.stringify(details));
+    this.setState({
+      SearchResults: this.state.SearchResults,
+      MovieDetails: details
+    });
+  };
 
   render() {
     return (
@@ -35,16 +35,16 @@ class SearchContainer extends React.Component {
               <SearchBar setSearchResultsProps={this.setSearchResults} />
             </td>
             <td>
-              <SearchResultsList SearchResults={this.state.SearchResults} setMovieDetailsProps={this.setMovieDetails}/>
+              <SearchResultsList SearchResults={this.state.SearchResults} setMovieDetailsProps={this.setMovieDetails} />
             </td>
             <td>
               <SearchItemDetails MovieDetails={this.state.MovieDetails} />
             </td>
           </tr>
         </table>
-    </div>
-        );
-    }
+      </div>
+    );
+  }
 }
 
 export default SearchContainer   
