@@ -6,12 +6,18 @@ class SearchItemDetails extends Component {
   render() {
     if (!this.props.MovieDetails.name) return null;
     console.log(JSON.stringify(this.props.MovieDetails))
-    return <span> 
-      {this.props.MovieDetails.name}
-      {this.props.MovieDetails.language}
-      Genres {this.props.MovieDetails.genres}
+    return <div>
+      <h2>{this.props.MovieDetails.name}</h2>
+      <p>
       <img src={this.props.MovieDetails.image.medium} alt={this.props.MovieDetails.name}/>
-    </span>
+      </p>
+      <p>
+       Language: {this.props.MovieDetails.language}
+      </p>
+      <p>
+      Genres: {this.props.MovieDetails.genres}
+      </p>
+    </div>
   }
 
 
