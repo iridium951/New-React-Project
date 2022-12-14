@@ -1,0 +1,124 @@
+body {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  footer {
+    background-color: rgb(24, 23, 27);
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+  }
+  footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .row {
+    padding: 0.5em 1em;
+  }
+  .row.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
+    min-height: 12em;
+  }
+
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
+    min-height: 12em;
+  }
+
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: rgb(255, 202, 60);
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 70ms;
+  }
+  button {
+    background-color: rgb(255, 202, 60);
+    color: rgb(0, 0, 0);
+  }
+
+  button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px 0px rgba(255, 202, 60, 0.5);
+  }
+
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .copyright {
+    padding: 0.2em 1em;
+    background-color: rgb(25, 8, 58);
+  }
+  .footer-menu{
+    float: left;
+      margin-top: 12px;
+  }
+  
+  .footer-menu a{
+    color: rgb(209, 209, 209);
+    padding: 10px;
+    text-decoration: none;
+  }
+  .footer-menu a:hover{
+    color: rgb(255, 202, 60);
+  }
+  .copyright p {
+    font-size: 0.9em;
+    text-align: right;
+  }
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  }  
