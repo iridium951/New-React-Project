@@ -28,6 +28,7 @@ class SearchContainer extends React.Component {
 
   render() {
     return (
+      <div className="body">
     <table>
       <tr>
         <td valign="top">
@@ -41,6 +42,7 @@ class SearchContainer extends React.Component {
           </td>
       </tr>
     </table>
+    </div>
         );
     }
 }
