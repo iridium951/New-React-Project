@@ -28,20 +28,10 @@ class SearchContainer extends React.Component {
 
   render() {
     return (
-      <div className="body">
-    <table>
-      <tr>
-        <td valign="top">
+      <div className="mainDiv">
         <SearchBar setSearchResultsProps={this.setSearchResults} />
-        </td>
-        <td valign="top">
         <SearchResultsList SearchResults={this.state.SearchResults} setMovieDetailsProps={this.setMovieDetails}/>
-        </td>
-        <td valign="top">
-          <SearchItemDetails MovieDetails={this.state.MovieDetails} />
-          </td>
-      </tr>
-    </table>
+        <SearchItemDetails MovieDetails={this.state.MovieDetails} />
     </div>
         );
     }
