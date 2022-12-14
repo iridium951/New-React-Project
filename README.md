@@ -2,7 +2,7 @@
 
 ## Deployment
 
-[Website is deployed under](https://mov-look-webtech.onrender.com/)
+[Website is deployed here](https://mov-look-webtech.onrender.com/)
 
 ## App description
 
