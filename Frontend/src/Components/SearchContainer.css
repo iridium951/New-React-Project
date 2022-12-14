@@ -1,11 +1,13 @@
-  .body {
+  .mainDiv {
     position: fixed;
-    top: 50px;
+    display: grid;
+    top: 70px;
     left: 0;
     width: 100%;
     text-align: center;
     background-color: indigo;
     color: white;
+    height: 200;
 
     padding-bottom: 100px;
 
