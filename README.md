@@ -2,7 +2,7 @@
 
 ## Deployment
 
-[Website is deployed here](https://mov-look-webtech.onrender.com/)
+[Website is deployed here](https://mov-look-webtech.onrender.com/). Please keep in mind that the website is deployed on a free instance of Render, and can therefore take a while to spin up.
 
 ## App description
 
